@@ -41,6 +41,16 @@ class Passenger {
     return store.trips.filter(trip => {return trip.passengerId === this.id;});
   }
   
+  drivers() {
+    const trips = this.trips();
+    const drivers = [];
+    trips.forEach(function(trip) {
+      drivers.push(trip.driver());
+    });
+    return drivers;
+    
+  }
+  
 }
 
 class Trip {
