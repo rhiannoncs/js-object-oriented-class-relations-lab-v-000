@@ -42,7 +42,7 @@ class Trip {
   }
   
   driver() {
-    return this.driverId;
+    return store.drivers.find
     }
   
 }
