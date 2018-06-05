@@ -33,6 +33,8 @@ class Passenger {
   
   passengers() {
     const trips = this.trips();
+    
+    
   }
 }
 
