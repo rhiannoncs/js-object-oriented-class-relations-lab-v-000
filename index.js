@@ -42,8 +42,9 @@ class Trip {
   }
   
   driver() {
+    const findId = this.driverId;
     return store.drivers.find(function(driver) {
-      return driver.id === this.driverId;
+      return driver.id === findId;
     });
     }
   
