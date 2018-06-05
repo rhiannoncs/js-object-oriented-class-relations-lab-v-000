@@ -34,7 +34,7 @@ class Passenger {
   passengers() {
     const trips = this.trips();
     const passengers = [];
-    trips.forEach()
+    trips.forEach(function(trip))
     
   }
 }
