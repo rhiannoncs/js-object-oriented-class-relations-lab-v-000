@@ -34,7 +34,10 @@ class Passenger {
   passengers() {
     const trips = this.trips();
     const passengers = [];
-    trips.forEach(function(trip))
+    trips.forEach(function(trip) {
+      passengers.push(trip.passenger());
+    });
+    return passengers;
     
   }
 }
