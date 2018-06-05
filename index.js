@@ -17,6 +17,16 @@ class Driver {
       return trip.driverId === this.id;
     });
   }
+  
+  passengers() {
+    const trips = this.trips();
+    const passengers = [];
+    trips.forEach(function(trip) {
+      passengers.push(trip.passenger());
+    });
+    return passengers;
+    
+  }
 }
 
 class Passenger {
@@ -31,15 +41,6 @@ class Passenger {
     return store.trips.filter(trip => {return trip.passengerId === this.id;});
   }
   
-  passengers() {
-    const trips = this.trips();
-    const passengers = [];
-    trips.forEach(function(trip) {
-      passengers.push(trip.passenger());
-    });
-    return passengers;
-    
-  }
 }
 
 class Trip {
