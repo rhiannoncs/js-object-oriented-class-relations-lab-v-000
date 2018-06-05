@@ -30,6 +30,10 @@ class Passenger {
   trips() {
     return store.trips.filter(trip => {return trip.passengerId === this.id;});
   }
+  
+  passengers() {
+    const trips = this.trips();
+  }
 }
 
 class Trip {
